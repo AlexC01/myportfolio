@@ -1,6 +1,9 @@
 import React from "react"
+import { LazyLoadImage } from "react-lazy-load-image-component"
+import "react-lazy-load-image-component/src/effects/blur.css"
 import Layout from "../components/Layout"
 import Tags from "../../content/Tags.json"
+import Projects from "../../content/Projects.json"
 
 const index = () => {
   return (
@@ -20,7 +23,13 @@ const index = () => {
                 </h1>
               </div>
               <div className="hero-image col-span-6">
-                <img src="/hero.svg" alt="Hero logo" width="600" height="400" />
+                <LazyLoadImage
+                  src="/hero.svg"
+                  alt="Hero logo"
+                  width="600"
+                  effect="blur"
+                  height="400"
+                />
               </div>
             </div>
           </div>
@@ -63,7 +72,13 @@ const index = () => {
                       key={tag.id}
                       className="bg-darkcolor p-6 rounded-md grid justify-items-center"
                     >
-                      <img src={tag.icon} alt="HTML" width="52" height="52" />
+                      <LazyLoadImage
+                        src={tag.icon}
+                        alt="HTML"
+                        width="52"
+                        height="52"
+                        effect="blur"
+                      />
                       <h2 className="text-textnav text-lg font-bold uppercase mt-5 text-center">
                         {tag.name}
                       </h2>
@@ -143,6 +158,146 @@ const index = () => {
                   Database knowledge such as SQL, MySQL and PostgreSQL
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="py-10" id="projects">
+          <div className="w-full grid justify-items-center">
+            <h1 className="text-4xl uppercase text-darkcolor font-bold tracking-widest">
+              Projects
+            </h1>
+            <hr className="w-16 h-1 bg-thisblue rounded-full mt-5" />
+          </div>
+          <div className="2xl:container mt-8 px-4 sm:px-8 lg:px-16 xl:px-24 mx-auto">
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+              {Projects.content.map(project => (
+                <div className="overflow-hidden bg-white rounded-lg shadow-md">
+                  <div className="h-full bg-darkcolor">
+                    <LazyLoadImage
+                      effect="blur"
+                      className="w-full h-56 object-cover object-center"
+                      src={project.image}
+                      alt={project.title}
+                    />
+                    <div className="p-6">
+                      <h1 className="font-bold text-lg text-textnav mb-2">
+                        {project.title}
+                      </h1>
+                      <p className="leading-relaxed mb-5 text-textnav">
+                        {project.description}
+                      </p>
+                      <div className="flex justify-between flex-wrap mt-3">
+                        <a
+                          href={project.repository}
+                          target="_blank"
+                          className="flex items-center text-darkcolor uppercase font-bold text-sm bg-textnav rounded-md hover:bg-hoverbutton px-2 py-1"
+                        >
+                          <img
+                            src="/icons/github.png"
+                            alt="Github"
+                            className="h-4 w-4 mr-1"
+                          />
+                          Repository
+                        </a>
+                        <a
+                          href={project.web}
+                          target="_blank"
+                          className="flex items-center text-darkcolor uppercase font-bold text-sm bg-textnav rounded-md hover:bg-hoverbutton px-2 py-1"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="h-4 w-4 mr-1"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                            />
+                          </svg>
+                          Website
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="text-center mt-6">
+              <a
+                href="https://github.com/AlexC01"
+                target="_blank"
+                className="bg-babyblue px-5 py-2 rounded font-bold uppercase hover:bg-hoverblue"
+              >
+                View More
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="py-10" id="contact">
+          <div className="w-full grid justify-items-center">
+            <h1 className="text-4xl uppercase text-darkcolor font-bold tracking-widest">
+              Contact
+            </h1>
+            <hr className="w-16 h-1 bg-thisblue rounded-full mt-5" />
+          </div>
+          <div className="2xl:container mt-8 px-4 sm:px-8 lg:px-16 xl:px-24 mx-auto">
+            <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-8">
+              <a href="https://github.com/AlexC01" target="_blank">
+                <div className="bg-darkcolor p-5 grid justify-items-center rounded-md hover:shadow-lg">
+                  <img
+                    src="/icons/github_2.png"
+                    alt="Github Icon"
+                    width="52"
+                    height="52"
+                  />
+                  <h2 className="text-textnav text-xl font-bold uppercase mt-5">
+                    Follow Me
+                  </h2>
+                </div>
+              </a>
+              <a href="mailto:acuadraq@gmail.com" target="_blank">
+                <div className="bg-darkcolor p-5 grid justify-items-center rounded-md hover:shadow-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="52"
+                    className="text-textnav"
+                    width="52"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <h2 className="text-textnav text-xl font-bold uppercase mt-5">
+                    Mail Me
+                  </h2>
+                </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/antonio-cuadra-quezada/"
+                target="_blank"
+              >
+                <div className="bg-darkcolor p-5 grid justify-items-center rounded-md hover:shadow-lg">
+                  <img
+                    src="/icons/linkedin.png"
+                    alt="Linkedin Icon"
+                    width="52"
+                    height="52"
+                  />
+                  <h2 className="text-textnav text-xl font-bold uppercase mt-5">
+                    Contact Me
+                  </h2>
+                </div>
+              </a>
             </div>
           </div>
         </div>

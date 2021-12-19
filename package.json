@@ -19,10 +19,12 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-lazy-load-image-component": "^1.5.1"
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.4",
+    "@types/react-lazy-load-image-component": "^1.5.2",
     "autoprefixer": "^10.4.0",
     "gatsby-plugin-postcss": "^5.4.0",
     "postcss": "^8.4.5",

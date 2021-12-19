@@ -1,0 +1,66 @@
+{
+    "title": "Tags of the tecnologies",
+    "content": [
+      {
+        "id": 1,
+        "name": "HTML5",
+        "icon": "/icons/html.png"
+      },
+      {
+        "id": 2,
+        "name": "CSS3",
+        "icon": "/icons/css.png"
+      },
+      {
+        "id": 3,
+        "name": "JavaScript",
+        "icon": "/icons/js.png"
+      },
+      {
+        "id": 4,
+        "name": "ReactJS",
+        "icon": "/icons/react.png"
+      },
+      {
+        "id": 5,
+        "name": "Sass",
+        "icon": "/icons/sass.png"
+      },
+      {
+        "id": 6,
+        "name": "TypeScript",
+        "icon": "/icons/typescript.png"
+      },
+      {
+        "id": 7,
+        "name": "Testing",
+        "icon": "/icons/test.png"
+      },
+      {
+        "id": 8,
+        "name": "Gatsby",
+        "icon": "/icons/gatsby.png"
+      },
+      {
+        "id": 9,
+        "name": "Tailwind",
+        "icon": "/icons/tailwind.png"
+      },
+      {
+        "id": 10,
+        "name": "Python",
+        "icon": "/icons/python.png"
+      },
+      {
+        "id": 11,
+        "name": "Django",
+        "icon": "/icons/django.png"
+      },
+      {
+        "id": 12,
+        "name": "PostgreSQL",
+        "icon": "/icons/postgres.png"
+      }
+    ]
+  }
+  

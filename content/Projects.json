@@ -1,0 +1,53 @@
+{
+    "title": "Projects for the Portfolio",
+    "content": [
+        {
+            "id": 1,
+            "title": "Movies Website",
+            "description": "Its a website that contains every movie and tv show, with all of their information",
+            "image": "/projects/movies.png",
+            "repository": "https://gitlab.com/acuadraq/applaudo-cinema",
+            "web": "https://applaudo-cinema.vercel.app/"
+        },
+        {
+            "id": 2,
+            "title": "Marvel Comics",
+            "description": "Marvel page full of comics, characters, stories and more",
+            "image": "/projects/marvel.png",
+            "repository": "https://gitlab.com/acuadraq/week_8-marvel",
+            "web": "https://week-8-marvel.vercel.app/"
+        },
+        {
+            "id": 3,
+            "title": "Time Machine",
+            "description": "Two games that have the same logic of going back, resume and replay",
+            "image": "/projects/time.png",
+            "repository": "https://gitlab.com/acuadraq/week_7-time-machine",
+            "web": "https://week-7-time-machine.vercel.app/"
+        },
+        {
+            "id": 4,
+            "title": "Portfolio",
+            "description": "My Profesional portfolio, where I show some of my projects, experience and about me",
+            "image": "/projects/portfolio.png",
+            "repository": "https://github.com/AlexC01/myportfolio",
+            "web": "https://www.acuadraq.tech/"
+        },
+        {
+            "id": 5,
+            "title": "Video Games Store",
+            "description": "Videogames website where you can look for any videogame, and comment it",
+            "image": "/projects/vgames.png",
+            "repository": "https://gitlab.com/acuadraq/week_6-videogames_ts",
+            "web": "https://week-6-videogames-ts.vercel.app/"
+        },
+        {
+            "id": 6,
+            "title": "To Do List",
+            "description": "To Do list with multiple functionality and can work very well on mobile",
+            "image": "/projects/todo.png",
+            "repository": "https://github.com/AlexC01/To-Do-List",
+            "web": "https://alexc01.github.io/To-Do-List/"
+        }
+    ]
+}

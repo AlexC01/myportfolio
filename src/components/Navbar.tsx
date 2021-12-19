@@ -13,15 +13,16 @@ const Navbar = () => {
         </Link>
         <ul className="md:ml-auto flex text-textnav flex-wrap items-center text-base justify-center">
           <li className="mr-5 hover:text-babyblue">
-            <Link to="/" className="mr-5">
-              Home
-            </Link>
-          </li>
-          <li className="mr-5 hover:text-babyblue">
             <a href="#about">About</a>
           </li>
           <li className="mr-5 hover:text-babyblue">
             <a href="#experience">Experience</a>
+          </li>
+          <li className="mr-5 hover:text-babyblue">
+            <a href="#projects">Projects</a>
+          </li>
+          <li className="mr-5 hover:text-babyblue">
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

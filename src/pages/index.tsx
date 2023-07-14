@@ -46,13 +46,12 @@ const index = () => {
               <div className="md:pr-12 lg:pr-24">
                 <h3 className="text-thisblue font-bold text-lg">Who am I?</h3>
                 <h2 className="text-black text-lg mt-4 font-bold">
-                  I'm Antonio Cuadra, a Web developer focus on the Front-end
+                  I'm Antonio Cuadra, a Full Stack Developer
                 </h2>
                 <p className="mt-5 text-black text-md text-justify leading-9">
-                  I am a graduated student and worked as a Web Developer for the
-                  past year. I am passionate for tecnologies such as React,
-                  Gatsby, and learning new things everyday to accomplish goals
-                  on the best way possible.
+                 As a System Engineer graduate with 2 years of experience as a Full Stack developer, I have focused on developing modern web applications using
+cutting‑edge technologies. I specialize in Frontend development with React and Next.js, leveraging their potential to create attractive and highly
+functional user interfaces.
                 </p>
                 <div className="mt-8 mb-8 md:mb-0">
                   <a

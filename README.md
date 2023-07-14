@@ -1,4 +1,4 @@
-# My Portfolio
+# Portfolio
 
 ![](static/projects/portfolio.png)
 
